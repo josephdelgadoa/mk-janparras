@@ -1,0 +1,9 @@
+services:
+  janparras-mk:
+    container_name: janparras-mk
+    build: .
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    env_file:
+      - .env
